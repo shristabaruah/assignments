@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.container {
+  background-color: grey;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 21.9rem;
+  margin: 4rem auto;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+}
+.card-content {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card-content h1 {
+  font-weight: 600;
+}
+.card-content h2 {
+  font: weight 500;
+  margin-bottom: 1rem;
+}
+.card-content p {
+  margin: 0.5rem;
+  line-height: 1.5em;
+}
+.buttons-icons {
+  display: flex;
+}
+.btn-read,
+.bookmark {
+  color: red;
+  font-size: 0.967rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-style: none;
+  background-color: white;
+  margin: 1rem;
+  cursor: pointer;
+}
+.icons {
+  margin: 1rem;
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+  font-weight: 100;
+}
+i:hover,
+.btn-read:hover,
+.bookmark:hover {
+  background-color: rgba(199, 195, 195, 0.548);
+  border-radius: 50%;
+  padding: 5px;
+}
+.card-header {
+  margin: 1rem;
+}
+.card-with-icons > .icons {
+  justify-content: flex-end;
+}
+.card-text-over-media {
+  position: relative;
+  height: 23rem;
+}
+.card-text-over-media > .card-content > h1 {
+  position: absolute;
+  top: 7.5rem;
+  color: white;
+}
+.card-text-over-media > .card-content > h2 {
+  position: absolute;
+  top: 10rem;
+  color: white;
+}
+.horizontal-card {
+  width: 30rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.horizontal-card img {
+  width: 100%;
+}
+.horizontal-card .card-content {
+  flex-direction: column;
+}
+.horizontal-card > .buttons-icons {
+  position: absolute;
+  bottom: 0rem;
+}
+.horizontal-card > .buttons-icons > .icons {
+  padding-left: 6rem;
+}
